@@ -6,16 +6,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import App from "./app/App";
 import reportWebVitals from "./reportWebVitals";
-<<<<<<< HEAD
-=======
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
->>>>>>> d0ef3050003b1c73abb1f7cf099cb85ec9630d7c
 import theme from "./app/MaterialTheme";
 import "./css/index.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const container = document.getElementById("root")!;
+const container = document.getElementById("root")!; //main APP
 const root = createRoot(container);
 
 root.render(
@@ -23,13 +18,9 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-<<<<<<< HEAD
         <Router>
           <App />
         </Router>
-=======
-        <App />
->>>>>>> d0ef3050003b1c73abb1f7cf099cb85ec9630d7c
       </ThemeProvider>
     </Provider>
   </React.StrictMode>
